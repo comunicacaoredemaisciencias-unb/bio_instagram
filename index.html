@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#C91668">
+  <meta name="description" content="Resumo navegável da Rede Mais Ciência nas Escolas Públicas do Distrito Federal. A documentação oficial está na Wikiversidade.">
+  <title>Rede Mais Ciência — Escolas Públicas do DF</title>
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
+  <link rel="apple-touch-icon" href="assets/favicon.png">
+  <meta property="og:title" content="Rede Mais Ciência nas Escolas Públicas do Distrito Federal">
+  <meta property="og:description" content="Ciência, tecnologia e aprendizagem mão na massa conectando universidade, professores e estudantes das escolas públicas do DF.">
+  <meta property="og:type" content="website">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700&family=Fraunces:opsz,wght@9..144,650;9..144,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip-link" href="#links">Pular para os links</a>
+
+  <div class="page">
+    <button class="share" type="button" id="btn-compartilhar" aria-label="Compartilhar esta página">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <circle cx="18" cy="5" r="3"></circle>
+        <circle cx="6" cy="12" r="3"></circle>
+        <circle cx="18" cy="19" r="3"></circle>
+        <line x1="8.59" y1="13.51" x2="15.42" y2="17.49"></line>
+        <line x1="15.41" y1="6.51" x2="8.59" y2="10.49"></line>
+      </svg>
+      <span>Compartilhar</span>
+    </button>
+
+    <header class="hero">
+      <div class="hero__brand">
+        <img class="hero__logo" src="assets/logo.png?v=2" alt="Ilustração da Rede Mais Ciência">
+        <h1 class="hero__wordmark">
+          <img src="assets/logo-rede.png" alt="Rede + Ciência nas Escolas Públicas do DF">
+        </h1>
+      </div>
+      <p class="hero__lead">Ciência, tecnologia e aprendizagem mão na massa conectando universidade, professores e estudantes das escolas públicas do DF.</p>
+      <ul class="chips">
+        <li>15 escolas</li>
+        <li>Ensino Fundamental II</li>
+        <li>Ciência + Tecnologia</li>
+        <li id="aviso-edital" hidden>
+          <a href="#editais"><span class="dot" aria-hidden="true"></span> Edital aberto</a>
+        </li>
+      </ul>
+    </header>
+
+    <nav id="links" class="links" aria-label="Assuntos da Rede Mais Ciência">
+      <a class="card" href="https://pt.wikiversity.org/wiki/Rede_Mais_Ci%C3%AAncia_nas_Escolas_P%C3%BAblicas_do_Distrito_Federal" rel="noopener noreferrer" target="_blank">
+        <span class="card__icon" aria-hidden="true">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <rect width="6" height="6" x="16" y="16" rx="1"></rect>
+            <rect width="6" height="6" x="2" y="16" rx="1"></rect>
+            <rect width="6" height="6" x="9" y="2" rx="1"></rect>
+            <path d="M5 16v-3a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v3"></path>
+            <path d="M12 12V8"></path>
+          </svg>
+        </span>
+        <span class="card__text">
+          <span class="card__title">Conheça a Rede</span>
+          <span class="card__desc">Projeto, escolas, laboratórios e ações da Rede Mais Ciência.</span>
+        </span>
+        <span class="card__arrow" aria-hidden="true">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"></path></svg>
+        </span>
+      </a>
+
+      <a class="card" href="https://pt.wikiversity.org/wiki/Kits_de_Rob%C3%B3tica" rel="noopener noreferrer" target="_blank">
+        <span class="card__icon" aria-hidden="true">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 8V4H8"></path>
+            <rect width="16" height="12" x="4" y="8" rx="2"></rect>
+            <path d="M2 14h2"></path>
+            <path d="M20 14h2"></path>
+            <path d="M15 13v2"></path>
+            <path d="M9 13v2"></path>
+          </svg>
+        </span>
+        <span class="card__text">
+          <span class="card__title">Materiais e Robótica</span>
+          <span class="card__desc">Kits de robótica, cartilhas, guias e materiais produzidos pela Rede.</span>
+        </span>
+        <span class="card__arrow" aria-hidden="true">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"></path></svg>
+        </span>
+      </a>
+
+      <a class="card" href="https://www.instagram.com/maiscienciaunb/" rel="noopener noreferrer" target="_blank">
+        <span class="card__icon" aria-hidden="true">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+          </svg>
+        </span>
+        <span class="card__text">
+          <span class="card__title">Acompanhe a Rede</span>
+          <span class="card__desc">Novidades, registros das atividades, Instagram e formas de contato.</span>
+        </span>
+        <span class="card__arrow" aria-hidden="true">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"></path></svg>
+        </span>
+      </a>
+    </nav>
+
+    <section class="block" id="agora" aria-labelledby="titulo-agora">
+      <h2 id="titulo-agora">Acontecendo agora</h2>
+      <p>Atividades, disciplinas e ações que estão acontecendo neste momento na Rede Mais Ciência.</p>
+      <div class="updates">
+        <!-- INÍCIO DAS ATIVIDADES ATUAIS -->
+        <!-- Para adicionar outra atividade, copie o <a class="update-card"> abaixo. -->
+        <a class="update-card" href="https://pt.wikiversity.org/wiki/Kits_de_Rob%C3%B3tica" rel="noopener noreferrer" target="_blank">
+          <span class="status">Em andamento</span>
+          <span class="update-card__code">DEX099</span>
+          <strong class="update-card__title">Montagem de Kits de Robótica</strong>
+          <span class="update-card__desc">Atividade prática de montagem, organização e preparação dos kits de robótica utilizados nas escolas da Rede.</span>
+          <span class="update-card__meta">
+            <span>2026.2</span>
+            <span class="update-card__more">Ver atividade</span>
+          </span>
+        </a>
+        <!-- FIM DAS ATIVIDADES ATUAIS -->
+      </div>
+    </section>
+
+    <section class="block" id="editais" aria-labelledby="titulo-editais">
+      <h2 id="titulo-editais">Editais abertos</h2>
+      <p>Oportunidades atuais para participar das ações da Rede Mais Ciência.</p>
+      <div class="editais">
+        <!--
+          Para publicar um edital, copie o modelo abaixo para DENTRO de .editais,
+          preencha os dados e remova data-pending se o link for oficial.
+
+          Status: data-status="aberto" | "breve" | "encerrado"
+          Encerrados não aparecem na página.
+
+        <a class="edital-card" data-status="aberto" href="#" rel="noopener noreferrer" target="_blank">
+          <span class="status">Inscrições abertas</span>
+          <strong class="update-card__title">Título do edital</strong>
+          <span class="update-card__desc">Breve descrição da oportunidade.</span>
+          <span class="update-card__meta">
+            <span>Até 00/00/0000</span>
+            <span class="update-card__more">Ver edital</span>
+          </span>
+        </a>
+        -->
+
+        <div class="edital-empty" id="edital-vazio">
+          <span class="edital-empty__icon" aria-hidden="true">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M6 8a6 6 0 0 1 12 0c0 7 3 9 3 9H3s3-2 3-9"></path>
+              <path d="M10.3 21a1.94 1.94 0 0 0 3.4 0"></path>
+            </svg>
+          </span>
+          <strong>Nenhum edital aberto no momento</strong>
+          <span>Acompanhe esta página e nossas redes para novas oportunidades.</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="block" aria-labelledby="titulo-trabalhou">
+      <h2 id="titulo-trabalhou">O que a Rede já trabalhou</h2>
+      <p>Algumas das ações já desenvolvidas na construção da Rede Mais Ciência.</p>
+      <div class="worked" aria-label="Ações já desenvolvidas">
+        <div class="card card--compact">
+          <span class="card__icon" aria-hidden="true">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M14 22v-4a2 2 0 1 0-4 0v4"></path>
+              <path d="m18 10 4 2v8a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2v-8l4-2"></path>
+              <path d="M18 5v17"></path>
+              <path d="m4 6 8-4 8 4"></path>
+              <path d="M6 5v17"></path>
+              <circle cx="12" cy="9" r="2"></circle>
+            </svg>
+          </span>
+          <span class="card__text">
+            <span class="card__title">Visitas às escolas</span>
+            <span class="card__desc">Conhecimento das escolas, espaços e infraestrutura que recebem as ações da Rede.</span>
+          </span>
+          <span class="card__arrow" aria-hidden="true">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"></path></svg>
+          </span>
+        </div>
+        <div class="card card--compact">
+          <span class="card__icon" aria-hidden="true">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M10 2v7.527a2 2 0 0 1-.211.896L4.72 20.55a1 1 0 0 0 .9 1.45h12.76a1 1 0 0 0 .9-1.45l-5.069-10.127A2 2 0 0 1 14 9.527V2"></path>
+              <path d="M8.5 2h7"></path>
+              <path d="M7 16h10"></path>
+            </svg>
+          </span>
+          <span class="card__text">
+            <span class="card__title">Laboratórios mão na massa</span>
+            <span class="card__desc">Planejamento e organização dos espaços de audiovisual, fabricação digital e robótica.</span>
+          </span>
+          <span class="card__arrow" aria-hidden="true">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"></path></svg>
+          </span>
+        </div>
+        <div class="card card--compact">
+          <span class="card__icon" aria-hidden="true">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 8V4H8"></path>
+              <rect width="16" height="12" x="4" y="8" rx="2"></rect>
+              <path d="M2 14h2"></path>
+              <path d="M20 14h2"></path>
+              <path d="M15 13v2"></path>
+              <path d="M9 13v2"></path>
+            </svg>
+          </span>
+          <span class="card__text">
+            <span class="card__title">Kits de Robótica</span>
+            <span class="card__desc">Montagem e preparação de kits de robótica e eletrônica utilizados nas atividades.</span>
+          </span>
+          <span class="card__arrow" aria-hidden="true">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"></path></svg>
+          </span>
+        </div>
+        <div class="card card--compact">
+          <span class="card__icon" aria-hidden="true">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 7v14"></path>
+              <path d="M3 18a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h5a4 4 0 0 1 4 4 4 4 0 0 1 4-4h5a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1h-6a3 3 0 0 0-3 3 3 3 0 0 0-3-3z"></path>
+            </svg>
+          </span>
+          <span class="card__text">
+            <span class="card__title">Materiais pedagógicos</span>
+            <span class="card__desc">Produção de cartilhas, orientações e guias de equipamentos e tecnologias.</span>
+          </span>
+          <span class="card__arrow" aria-hidden="true">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"></path></svg>
+          </span>
+        </div>
+        <div class="card card--compact">
+          <span class="card__icon" aria-hidden="true">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path>
+              <circle cx="9" cy="7" r="4"></circle>
+              <path d="M22 21v-2a4 4 0 0 0-3-3.87"></path>
+              <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+            </svg>
+          </span>
+          <span class="card__text">
+            <span class="card__title">Formação e oficinas</span>
+            <span class="card__desc">Atividades de formação, planejamento e apoio a professores e estudantes.</span>
+          </span>
+          <span class="card__arrow" aria-hidden="true">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"></path></svg>
+          </span>
+        </div>
+        <div class="card card--compact">
+          <span class="card__icon" aria-hidden="true">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"></path>
+            </svg>
+          </span>
+          <span class="card__text">
+            <span class="card__title">Comunicação da Rede</span>
+            <span class="card__desc">Página do projeto, mídias sociais, identidade visual e canais de comunicação.</span>
+          </span>
+          <span class="card__arrow" aria-hidden="true">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"></path></svg>
+          </span>
+        </div>
+      </div>
+    </section>
+
+    <section class="block" aria-labelledby="titulo-areas">
+      <h2 id="titulo-areas">Áreas que colocamos em prática</h2>
+      <p>Conheça as cinco frentes trabalhadas nas atividades formativas da Rede Mais Ciência.</p>
+      <nav class="subject-grid" aria-label="Cinco áreas formativas">
+        <a class="subject-card" href="https://pt.wikiversity.org/wiki/Linha_1:_Produ%C3%A7%C3%A3o_audiovisual_e_multim%C3%ADdia_para_a_cidadania_digital" rel="noopener noreferrer" target="_blank">
+          <span class="subject-card__icon" aria-hidden="true">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="m16 13 5.223 3.482a.5.5 0 0 0 .777-.416V7.87a.5.5 0 0 0-.752-.432L16 10.5"></path>
+              <rect x="2" y="6" width="14" height="12" rx="2"></rect>
+            </svg>
+          </span>
+          <span class="subject-card__title">Produção Audiovisual</span>
+          <span class="subject-card__desc">Comunicação, vídeo, imagem e produção de conteúdos digitais.</span>
+        </a>
+        <a class="subject-card" href="https://pt.wikiversity.org/wiki/Rede_Mais_Ci%C3%AAncia_nas_Escolas_P%C3%BAblicas_do_Distrito_Federal" rel="noopener noreferrer" target="_blank">
+          <span class="subject-card__icon" aria-hidden="true">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="6" x2="10" y1="11" y2="11"></line>
+              <line x1="8" x2="8" y1="9" y2="13"></line>
+              <line x1="15" x2="15.01" y1="12" y2="12"></line>
+              <line x1="18" x2="18.01" y1="10" y2="10"></line>
+              <path d="M17.32 5H6.68a4 4 0 0 0-3.978 3.59c-.006.052-.01.101-.017.152C2.604 9.416 2 14.456 2 16a3 3 0 0 0 3 3c1 0 1.5-.5 2-1l1.414-1.414A2 2 0 0 1 9.828 16h4.344a2 2 0 0 1 1.414.586L17 18c.5.5 1 1 2 1a3 3 0 0 0 3-3c0-1.545-.604-6.584-.685-7.258-.007-.05-.011-.1-.017-.151A4 4 0 0 0 17.32 5z"></path>
+            </svg>
+          </span>
+          <span class="subject-card__title">Jogos Educacionais</span>
+          <span class="subject-card__desc">Aprendizagem, criatividade e resolução de problemas por meio de jogos.</span>
+        </a>
+        <a class="subject-card" href="https://pt.wikiversity.org/wiki/Linha_3:_Rob%C3%B3tica_e_Automa%C3%A7%C3%A3o" rel="noopener noreferrer" target="_blank">
+          <span class="subject-card__icon" aria-hidden="true">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 8V4H8"></path>
+              <rect width="16" height="12" x="4" y="8" rx="2"></rect>
+              <path d="M2 14h2"></path>
+              <path d="M20 14h2"></path>
+              <path d="M15 13v2"></path>
+              <path d="M9 13v2"></path>
+            </svg>
+          </span>
+          <span class="subject-card__title">Robótica</span>
+          <span class="subject-card__desc">Montagem, programação, eletrônica, sensores e automação.</span>
+        </a>
+        <a class="subject-card" href="https://pt.wikiversity.org/wiki/Linha_2:_Design_e_Fabrica%C3%A7%C3%A3o_Digital" rel="noopener noreferrer" target="_blank">
+          <span class="subject-card__icon" aria-hidden="true">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21 8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16Z"></path>
+              <path d="m3.3 7 8.7 5 8.7-5"></path>
+              <path d="M12 22V12"></path>
+            </svg>
+          </span>
+          <span class="subject-card__title">Modelagem 2D e 3D</span>
+          <span class="subject-card__desc">Criação, prototipagem e fabricação de objetos físicos e digitais.</span>
+        </a>
+        <a class="subject-card" href="https://pt.wikiversity.org/wiki/Linha_1:_Produ%C3%A7%C3%A3o_audiovisual_e_multim%C3%ADdia_para_a_cidadania_digital" rel="noopener noreferrer" target="_blank">
+          <span class="subject-card__icon" aria-hidden="true">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M6 18h8"></path>
+              <path d="M3 22h18"></path>
+              <path d="M14 22a7 7 0 1 0 0-14h-1"></path>
+              <path d="M9 14h2"></path>
+              <path d="M9 12a2 2 0 0 1-2-2V6h6v4a2 2 0 0 1-2 2Z"></path>
+              <path d="M12 6V3a1 1 0 0 0-1-1H9a1 1 0 0 0-1 1v3"></path>
+            </svg>
+          </span>
+          <span class="subject-card__title">Visualização Científica</span>
+          <span class="subject-card__desc">Transformação de conceitos e informações científicas em representações visuais.</span>
+        </a>
+      </nav>
+    </section>
+
+    <nav class="social" aria-label="Redes da Rede Mais Ciência">
+      <a class="social__btn" href="https://www.instagram.com/maiscienciaunb/" rel="noopener noreferrer" target="_blank" aria-label="Instagram da Rede Mais Ciência (abre em nova aba)">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+          <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+          <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+        </svg>
+      </a>
+      <a class="social__btn" href="https://pt.wikiversity.org/wiki/Rede_Mais_Ci%C3%AAncia_nas_Escolas_P%C3%BAblicas_do_Distrito_Federal" rel="noopener noreferrer" target="_blank" aria-label="Wikiversidade (abre em nova aba)">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
+          <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
+        </svg>
+      </a>
+    </nav>
+
+    <footer class="footer">
+      <p class="footer__title">Rede Mais Ciência nas Escolas Públicas do Distrito Federal</p>
+      <p>Projeto de extensão universitária</p>
+      <a class="footer__wiki" href="https://pt.wikiversity.org/wiki/Rede_Mais_Ci%C3%AAncia_nas_Escolas_P%C3%BAblicas_do_Distrito_Federal" rel="noopener noreferrer" target="_blank">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
+          <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
+        </svg>
+        Conteúdo completo disponível na Wikiversidade
+      </a>
+      <p class="footer__copy">© <span id="ano"></span> Rede Mais Ciência</p>
+    </footer>
+  </div>
+
+  <div class="toast" id="toast" role="status" aria-live="polite" hidden></div>
+  <script src="script.js"></script>
+</body>
+</html>
